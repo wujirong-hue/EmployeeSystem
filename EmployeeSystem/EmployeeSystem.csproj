@@ -81,6 +81,7 @@
     <Content Include="Web.config" />
     <Content Include="DelEmployee.aspx" />
     <Content Include="DelDepartment.aspx" />
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -108,6 +109,13 @@
     <Compile Include="DelDepartment.aspx.designer.cs">
       <DependentUpon>DelDepartment.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.config" />
@@ -119,6 +127,11 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Web1.sitemap" />
+    <Content Include="Web2.sitemap" />
+    <Content Include="Web3.sitemap" />
+    <Content Include="Web4.sitemap" />
+    <Content Include="Web5.sitemap" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

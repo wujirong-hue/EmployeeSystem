@@ -16,7 +16,7 @@ namespace EmployeeSystem
 
 
         //显示员工资料至GridView        
-        void ShowData(){
+       /* void ShowData(){
             using (SqlConnection cn=new SqlConnection()){
                 cn.ConnectionString = sqlconn;
                 cn.Open();
@@ -25,6 +25,6 @@ namespace EmployeeSystem
                 GridView1.DataSource = dr; 
                 GridView1.DataBind();
             }
-        } 
+        } */
     }
 }

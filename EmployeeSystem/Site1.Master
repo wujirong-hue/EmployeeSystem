@@ -8,12 +8,55 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            background-color: #808080;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
+
+            <br />
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" SiteMapProvider="web1sitemap" />
+            <asp:SiteMapDataSource ID="SiteMapDataSource2" runat="server" SiteMapProvider="web2sitemap" />
+            <asp:SiteMapDataSource ID="SiteMapDataSource3" runat="server" SiteMapProvider="web5sitemap" />
+            <asp:SiteMapDataSource ID="SiteMapDataSource4" runat="server" SiteMapProvider="web4sitemap" />
+            <asp:SiteMapDataSource ID="SiteMapDataSource5" runat="server" SiteMapProvider="web5sitemap" />
+            <table class="auto-style1">
+                <tr>
+                    <td>
+                        <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" ForeColor="White" style="font-weight: 700; font-size: xx-large">
+                        </asp:Menu>
+                    </td>
+                    <td>
+                        <asp:Menu ID="Menu2" runat="server" Orientation="Horizontal" DataSourceID="SiteMapDataSource2" ForeColor="White" style="font-weight: 700; font-size: xx-large">
+                        </asp:Menu>
+                    </td>
+                    <td>
+                        <asp:Menu ID="Menu3" runat="server" Orientation="Horizontal" DataSourceID="SiteMapDataSource3" ForeColor="White" style="font-size: xx-large; font-weight: 700">
+                        </asp:Menu>
+                    </td>
+                    <td>
+                        <asp:Menu ID="Menu4" runat="server" Orientation="Horizontal" DataSourceID="SiteMapDataSource4" ForeColor="White" style="font-size: xx-large; font-weight: 700">
+                        </asp:Menu>
+                    </td>
+                    <td>
+                        <asp:Menu ID="Menu5" runat="server" Orientation="Horizontal" DataSourceID="SiteMapDataSource5" ForeColor="White" style="font-size: xx-large; font-weight: 700">
+                        </asp:Menu>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
+        </div>
+        <div>
+
         </div>
     </form>
 </body>
