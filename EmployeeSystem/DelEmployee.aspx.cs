@@ -13,5 +13,18 @@ namespace EmployeeSystem
         {
 
         }
+
+
+        //显示员工资料至GridView        
+        void ShowData(){
+            using (SqlConnection cn=new SqlConnection()){
+                cn.ConnectionString = sqlconn;
+                cn.Open();
+                SqlCommand cmd = new SqlCommand("SELECT * FROM 员工",cn);
+                SqlDataReader dr = cmd.ExecuteReader();
+                GridView1.DataSource = dr; 
+                GridView1.DataBind();
+            }
+        } 
     }
 }
